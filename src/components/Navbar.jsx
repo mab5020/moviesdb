@@ -9,9 +9,9 @@ function Navbar() {
             <img className="ml-2" src={movieIcon} alt="Movie Icon" height="30" width="50" />
             <h1 className="p-2 mt-2 text-sky-50 text-[32px]">Movies DB</h1>
         </div>
-        <div className="mr-5 flex justify-between items-center">
-            <NavLink to="/moviesdb" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "text-white p-2 text-[25px]"}>Home</NavLink>
-            <NavLink to="/favorites" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "text-white p-2 text-[25px]"}>Favorites</NavLink>
+        <div className="mr-5 flex  text-sky-50 justify-between items-center">
+            <NavLink to="/moviesdb" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "p-2 text-[25px]"}>Home</NavLink>
+            <NavLink to="/favorites" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "p-2 text-[25px]"}>Favorites</NavLink>
             {/* <a className="p-2 text-[25px]" href="">Home</a>
             <a className="p-2 text-[25px]" href="">Favorite</a> */}
             {/* <button className="p-2">
