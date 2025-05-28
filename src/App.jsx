@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/moviesdb" element={<Home />} />
-          <Route path="/moviesdb/favorites" element={<Favorites />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </div>
     </MovieProvider>

@@ -11,7 +11,7 @@ function Navbar() {
         </div>
         <div className="mr-5 flex justify-between items-center">
             <NavLink to="/moviesdb" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "text-white p-2 text-[25px]"}>Home</NavLink>
-            <NavLink to="/moviesdb/favorites" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "text-white p-2 text-[25px]"}>Favorites</NavLink>
+            <NavLink to="/favorites" className={({ isActive }) => isActive ? "text-red-500 font-bold p-2 text-[25px]" : "text-white p-2 text-[25px]"}>Favorites</NavLink>
             {/* <a className="p-2 text-[25px]" href="">Home</a>
             <a className="p-2 text-[25px]" href="">Favorite</a> */}
             {/* <button className="p-2">
