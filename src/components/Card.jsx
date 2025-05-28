@@ -4,7 +4,7 @@ import { useMovieContext } from "../contexts/MovieContext";
 function Card({ movie }) {
     const { addToFavorites, removeFromFavorites, isFavorite } = useMovieContext();
     const favorite = isFavorite(movie)
-    console.log(movie.title + " " + favorite);
+    // console.log(movie.title + " " + favorite);
     
 
     const onFavorite = (e) => {
