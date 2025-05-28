@@ -13,8 +13,8 @@ function App() {
       <div className="h-screen flex flex-col">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/moviesdb/" element={<Home />} />
+          <Route path="/moviesdb/favorites" element={<Favorites />} />
         </Routes>
       </div>
     </MovieProvider>
