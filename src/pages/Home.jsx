@@ -45,10 +45,16 @@ function Home() {
         }
     }
 
+    const handleEnter = async (e) => {
+        if (e.key === "Enter") {
+            await handleSubmit(e);
+        }
+    }
+
     return <div className="home-container grow bg-stone-500 overflow-x-hidden">
         <div className="mt-10 flex justify-center text-[20px]">
             <div className="p-2 w-2/5 border-2 border-red-300 rounded-s-full">
-                <input className="w-full px-3 text-sky-50 outline-none" type="text" onChange={(e) => setQuery(e.target.value)} placeholder="Search movies..." value={query} />
+                <input onKeyUp={handleEnter} className="w-full px-3 text-sky-50 outline-none" type="text" onChange={(e) => setQuery(e.target.value)} placeholder="Search movies..." value={query} />
             </div>
             <button className="p-3 rounded-e-full text-sky-50 bg-red-500" onClick={handleSubmit}>Search</button>
         </div>
